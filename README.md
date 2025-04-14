@@ -36,6 +36,11 @@ An interactive attack map was created in Azure Sentinel Workbooks, visualizing t
 - Deploy a Windows 10 VM
 - Configure inbound rule in the Network Security Group to allow all traffic
 - Disable Windows Firewall on the VM: Start → wf.msc → Properties → turn off all profiles
+  
+<br />
+  <img src="https://i.imgur.com/H6Kfg2A.png" height="80%" width="80%" />
+  <img src="https://i.imgur.com/UBVZsVH.png" height="80%" width="80%" />
+  
    <br />
    <br />
    
@@ -50,6 +55,12 @@ An interactive attack map was created in Azure Sentinel Workbooks, visualizing t
 - Install the Azure Monitor Agent (AMA)
 - Set up a Data Collection Rule (DCR) to forward security logs
 - Ensure it's connected to the Log Analytics Workspace
+
+  <img src="https://i.imgur.com/3KCj2Ec.png" height="80%" width="80%" />
+<br />
+<br />
+
+  <img src="https://i.imgur.com/fwGXoBB.png" height="80%" width="80%" />
 <br />
 <br />
 
@@ -76,6 +87,10 @@ An interactive attack map was created in Azure Sentinel Workbooks, visualizing t
 - run following query into the advanced editor
 
 - Save and view real-time attack geolocation map
-  
+<img src="https://i.imgur.com/cWN5u9F.png" height="100%" width="100%" />
+<br />
+<br />
+ <img src="https://i.imgur.com/MXT0xsg.png" height="80%" width="80%" />
+<br />
 <br />
 <br /> 
