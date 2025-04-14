@@ -26,5 +26,5 @@ An interactive attack map was created in Azure Sentinel Workbooks, visualizing t
 
 <h2>Lab Overview:</h2>
 <br />
-<img src="https://i.imgur.com/DY1Z6H2.png" height="80%" width="80%" />
+<img src="https://i.imgur.com/Su9bFj7.png" height="80%" width="80%" />
 <br />
