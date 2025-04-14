@@ -16,10 +16,12 @@ An interactive attack map was created in Azure Sentinel Workbooks, visualizing t
 - <b>Azure Monitor Agent (AMA)</b>
 - <b>Sentinel Watchlist</b>
 
-
 <h2>Environments Used </h2>
 
-- <b>Windows 10</b> (21H2)
-- <b>Server 2019 </b>
+- <b>Windows 10</b>
+- <b>Microsoft Azure </b>
+- <b>Azure Sentinel </b>
+- <b>Log Analytics Workspace </b>
 
-<h2>Program walk-through:</h2>
+
+<h2>Lab Overview:</h2>
