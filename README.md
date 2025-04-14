@@ -64,10 +64,18 @@ An interactive attack map was created in Azure Sentinel Workbooks, visualizing t
 - Go to Sentinel → Watchlist and upload as:
   - Name: geoip
   - Search Key: network
+    
+<br />
+<br /> 
 
+6. **Build an Attack Map Workbook**: 
+- In Sentinel, create a new Workbook
 
-6. **Setting Up Routing and Remote Access**: Configure the Routing and Remote Access role to enable Network Address Translation (NAT), allowing client machines on the internal network to access the internet through the domain controller.
+- Remove default content and add a Query control
 
-7. **Configuring DHCP**: Install and configure the Dynamic Host Configuration Protocol (DHCP) role on the domain controller to assign IP addresses to client machines automatically. 
+- run following query into the advanced editor
 
-8. **Automating User Account Creation with PowerShell**: Use a PowerShell script to create multiple user accounts in Active Directory, streamlining the process of populating the domain with users.
+- Save and view real-time attack geolocation map
+  
+<br />
+<br /> 
