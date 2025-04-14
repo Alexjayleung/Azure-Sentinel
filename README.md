@@ -28,3 +28,46 @@ An interactive attack map was created in Azure Sentinel Workbooks, visualizing t
 <br />
 <img src="https://i.imgur.com/Su9bFj7.png" height="80%" width="80%" />
 <br />
+
+
+
+1. **Create a Honeypot (vm)**: 
+- Go to "Virtual Machines" in the Azure portal
+- Deploy a Windows 10 VM
+- Configure inbound rule in the Network Security Group to allow all traffic
+- Disable Windows Firewall on the VM: Start → wf.msc → Properties → turn off all profiles
+   <br />
+   <br />
+   
+2. **Create a Central Log Repository (Log Analytics Workspace)**:
+- Go to “Log Analytics Workspaces” and create a new workspace
+- Name and link it to your subscription/resource group
+   <br />
+   <br />
+   
+3. **Connect Your VM to Log Analytics**:
+- In the VM settings, go to “Extensions + Applications”
+- Install the Azure Monitor Agent (AMA)
+- Set up a Data Collection Rule (DCR) to forward security logs
+- Ensure it's connected to the Log Analytics Workspace
+<br />
+<br />
+
+4. **Query Security Logs with KQL**:
+- Use Kusto Query Language (KQL) to investigate failed logins
+- Observe timestamps, usernames, IPs, and more
+<br />
+<br />
+
+5. **Upload Geolocation Data to Enrich Logs**: 
+- Download the file: geoip-summarized.csv
+- Go to Sentinel → Watchlist and upload as:
+  - Name: geoip
+  - Search Key: network
+
+
+6. **Setting Up Routing and Remote Access**: Configure the Routing and Remote Access role to enable Network Address Translation (NAT), allowing client machines on the internal network to access the internet through the domain controller.
+
+7. **Configuring DHCP**: Install and configure the Dynamic Host Configuration Protocol (DHCP) role on the domain controller to assign IP addresses to client machines automatically. 
+
+8. **Automating User Account Creation with PowerShell**: Use a PowerShell script to create multiple user accounts in Active Directory, streamlining the process of populating the domain with users.
